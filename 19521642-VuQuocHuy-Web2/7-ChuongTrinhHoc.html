@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        padding: 0;
+        width: 100vw;
+        height: 100vh;
+        background-image: url(/images/7-ChuongTrinhHoc/truong_day_thiet_ke_do_hoa.jpg),
+          url(/images/7-ChuongTrinhHoc/nguyen-tac-trong-thiet-ke-do-hoa.jpg);
+        background-position: left 10% bottom, top;
+        background-repeat: no-repeat, repeat-x;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .container {
+        display: flex;
+        flex-flow: column;
+        align-items: center;
+      }
+
+      .container h1 {
+        color: #00ff01;
+      }
+
+      table {
+        border: 5px solid #00ff01;
+        border-collapse: separate;
+      }
+
+      thead {
+        background-color: #00ff01;
+        color: white;
+      }
+
+      tbody tr:nth-child(even) {
+        background-color: #99ffff;
+      }
+
+      tfoot {
+        background-color: #ff9900;
+      }
+
+      th,
+      td {
+        border: 1px solid #00ff01;
+        padding: 0.25rem 1rem;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="container">
+      <h1>CHƯƠNG TRÌNH HỌC THIẾT KẾ ĐỒ HỌA</h1>
+      <table>
+        <thead>
+          <tr>
+            <th rowspan="2" scope="col">STT</th>
+            <th rowspan="2" scope="col">TÊN MÔN HỌC</th>
+            <th colspan="2" scope="col">SỐ TIẾT</th>
+          </tr>
+          <th scope="col" colspan="1">Lý thuyết</th>
+          <th scope="col" colspan="1">Thực hành</th>
+        </thead>
+
+        <tbody>
+          <tr align="center">
+            <td>1</td>
+            <td align="left">Thiết kế mẫu với CorelDraw</td>
+            <td>30</td>
+            <td>60</td>
+          </tr>
+          <tr align="center">
+            <td>2</td>
+            <td align="left">Thiết kế mẫu với lllustrator</td>
+            <td>30</td>
+            <td>60</td>
+          </tr>
+          <tr align="center">
+            <td>3</td>
+            <td align="left">Xử lý ảnh với Photoshop</td>
+            <td>30</td>
+            <td>60</td>
+          </tr>
+          <tr align="center">
+            <td>4</td>
+            <td align="left">Mỹ thuật ứng dụng</td>
+            <td>30</td>
+            <td>60</td>
+          </tr>
+          <tr align="center">
+            <td>5</td>
+            <td align="left">Nghệ thuật chữ</td>
+            <td>30</td>
+            <td>30</td>
+          </tr>
+          <tr align="center">
+            <td>6</td>
+            <td align="left">Layout web</td>
+            <td>30</td>
+            <td>60</td>
+          </tr>
+          <tr align="center">
+            <td>7</td>
+            <td align="left">Thiết kế bộ nhận diện thương hiệu</td>
+            <td>30</td>
+            <td>60</td>
+          </tr>
+        </tbody>
+        <tfoot>
+          <tr align="center">
+            <td>8</td>
+            <td align="left">Khóa luận tốt nghiệp</td>
+            <td></td>
+            <td>150</td>
+          </tr>
+        </tfoot>
+      </table>
+    </div>
+  </body>
+</html>

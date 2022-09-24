@@ -1,0 +1,75 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  background-image: url(./images/10-VietNam/co-vietnam.png);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+h1 {
+  text-align: center;
+  color: red;
+}
+
+.hanoi-title {
+  background-color: red;
+  color: white;
+  text-align: left;
+}
+
+.hue-title {
+  background-color: purple;
+  color: white;
+  text-align: left;
+}
+
+.tphcm-title {
+  background-color: #ff00cd;
+  color: white;
+  text-align: left;
+}
+
+.img-left {
+  float: left;
+  margin-right: 20px;
+}
+
+.letter-img-left {
+  float: left;
+}
+
+.img-right {
+  float: right;
+  margin-left: 20px;
+}
+
+.letter-img-right {
+  float: right;
+  margin-left: 10px;
+}
+
+/* a {
+  color: orange;
+  text-decoration: none;
+  font-style: italic;
+  font-weight: bold;
+}
+a:hover {
+  color: lime;
+  text-decoration: underline;
+  background-color: blue;
+} */
+
+.link-to {
+  text-align: right;
+}
+
+.column {
+  columns: 3;
+  column-gap: 2rem;
+  column-rule: 2px dashed hsl(300, 50%, 90%);
+}

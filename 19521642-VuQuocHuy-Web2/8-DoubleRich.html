@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        width: 100vw;
+        height: 100vh;
+        margin: 0;
+        padding: 0;
+        background-color: #9a0000;
+        background-image: url(./images/8-DoubleRich/nen-hoa-hong.png),
+          url(./images/8-DoubleRich/rose.png),
+          url(./images/8-DoubleRich/kim-tea-hee.png);
+        background-repeat: no-repeat, no-repeat, no-repeat;
+        background-position: right bottom, left 10% bottom, left bottom;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .container {
+        width: 55%;
+        border: 1px solid white;
+        display: flex;
+        flex-flow: column;
+      }
+
+      .header {
+        display: grid;
+        grid-template-columns: 70% 30%;
+        grid-auto-rows: minmax(auto, 100px);
+      }
+
+      .title-1 {
+        grid-column: 1;
+        grid-row: 1;
+        background-color: #fe0000;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        font-size: 1.8rem;
+        color: white;
+        font-weight: bold;
+      }
+
+      .title-2 {
+        grid-column: 1;
+        grid-row: 2;
+        background-color: #feccff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 2.2rem;
+        font-weight: bold;
+        color: #fe0000;
+      }
+
+      .img-wrapper {
+        grid-column: 2;
+        grid-row: 1/3;
+        background-color: #feccff;
+      }
+
+      .img-wrapper img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+      }
+
+      .body {
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        gap: 1rem;
+        margin: 2rem 1.5rem;
+      }
+
+      .content {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+      }
+
+      .subtitle {
+        color: #fe0000;
+        position: relative;
+        display: flex;
+        align-items: center;
+        margin: 0;
+        padding-left: 1rem;
+        font-weight: bold;
+      }
+
+      .subtitle::before {
+        content: '';
+        display: block;
+        width: 0.4rem;
+        height: 0.4rem;
+        border: 2px solid #fe0000;
+        position: absolute;
+        left: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        background-color: transparent;
+      }
+
+      .subcontent {
+        list-style: none;
+      }
+
+      .subcontent > li {
+        position: relative;
+      }
+
+      .subcontent > li > p {
+        margin: 0;
+      }
+
+      .subcontent > li::before {
+        content: '\2022';
+        color: white;
+        font-weight: bold;
+        display: inline-block;
+        width: 1em;
+        margin-left: -1em;
+        position: absolute;
+        top: 0;
+      }
+
+      .subcontent-3 {
+        list-style: decimal;
+      }
+
+      .subcontent-3 > li > p {
+        margin: 0;
+      }
+
+      .subcontent,
+      .subcontent-3 > li {
+        margin: 10px 0;
+      }
+
+      .subcontent-3,
+      .subcontent > li {
+        color: #e2bdf5;
+      }
+
+      .subcontent-3 span {
+        font-weight: bold;
+        font-style: italic;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="header">
+        <div class="title-1">
+          <p>Công nghệ dầu gội dưỡng tóc mới</p>
+        </div>
+        <div class="title-2">
+          <p>Tỏa sáng cùng <span>DOUBLE RICH</span></p>
+        </div>
+        <div class="img-wrapper">
+          <img
+            src="./images/8-DoubleRich/qua-tang-doublerich.png"
+            alt="quà tặng"
+          />
+        </div>
+      </div>
+      <div class="body">
+        <ul class="content">
+          <li>
+            <p class="subtitle">Sản phẩm khuyến mãi :</p>
+            <ul class="subcontent">
+              <li>
+                <p>Dầu gội Double Rich mới 200ml, 400ml có tem khuyến mãi</p>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <p class="subtitle">Đối tượng tham gia :</p>
+            <ul class="subcontent">
+              <li>
+                <p>
+                  Áp dụng cho tất cả người tiêu dùng cuối cùng mua sản phẩm
+                  khuyến mãi.
+                </p>
+              </li>
+              <li>
+                <p>
+                  Chương trình không áp dụng cho nhân viên, nhà phân phối bao
+                  gồm các tổng đại lý, đại lý, cửa hàng bán sỉ, lẻ và các cá
+                  nhân kinh doanh sản phẩm của công ty LDMP LG Vina, công ty
+                  quảng cáo, công ty làm dịch vụ chương trình khuyến mãi này,
+                  nhân viên siêu thị.
+                </p>
+              </li>
+            </ul>
+          </li>
+        </ul>
+
+        <ul class="content">
+          <li>
+            <p class="subtitle">Cách thức nhận giải :</p>
+            <ol class="subcontent-3">
+              <li>
+                <p>
+                  <span>Giải khuyến khích :</span> Khách hàng đổi quà tại các
+                  cửa hàng bán lẻ trên toàn quốc bắt đầu. Bắt đầu từ ngày
+                  15/06/2005 đến 17h ngày 12/08/2005
+                </p>
+              </li>
+
+              <li>
+                <p>
+                  <span>Giải đặc biệt, nhất, nhì :</span> khách hàng cắt phần mã
+                  vạch trên mỗi chai dầu gội có khuyến mãi và gởi kèm phiếu
+                  trúng thưởng về văn phòng công ty, hạn chót đến hết ngày
+                  31/07/2005 (căn cứ theo dấu bưu điện nơi gởi). Sau đó công ty
+                  sẽ gởi thư thông báo trúng thưởng và cách thức nhận quà cho
+                  khách hàng.
+                </p>
+              </li>
+            </ol>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </body>
+</html>
